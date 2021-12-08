@@ -13,6 +13,12 @@ It is recommended to install the tool with `pip3`.
 pip3 install spar
 ```
 
+Once the tool is installed, add an alias to your shell (e.g. using `zsh`)
+
+```
+vi ~/.zshrc
+alias spar={$PYTHONPATH}/bin/spar
+```
 
 ### Usage
 
