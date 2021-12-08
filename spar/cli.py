@@ -60,7 +60,7 @@ def main(trace_dir, output_dir, load_factor, heter_factor, machine_conf, duratio
     with (Path(trace_dir) / 'sample_tasks.csv').open() as sample_task, \
          (Path(trace_dir) / 'sample_instances.csv').open() as sample_instance, \
          (Path(output_dir) / 'batch_task.csv').open('w') as output_task, \
-         (Path(output_dir) / 'batch_instace.csv').open('w') as output_instace:
+         (Path(output_dir) / 'batch_instance.csv').open('w') as output_instace:
 
         transformer = Transformer(heter_factor, machine_conf)
         output_job = lambda a, j: write_job(a, transformer.transform(j),
